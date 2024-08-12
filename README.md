@@ -24,30 +24,32 @@ You can run the application manually by following these steps:
    ```bash
    mvn clean install
 
-Run the Application
+2. **Run the Application**
 
-After building, you can run the application with the following command:
-java -jar target/todo-0.0.1-SNAPSHOT.jar
+   After building, you can run the application with the following command:
+   ```bash
+   java -jar target/todo-0.0.1-SNAPSHOT.jar
 
 The application will start on port 9210 by default. You can access it at http://localhost:9210 and http://localhost:9210/swagger-ui/
 
 
-Option 2: Running the Application with Docker Compose
+**Option 2: Running the Application with Docker Compose**
 Alternatively, you can run the application in a Docker container using Docker Compose.
 
 Build the Application
 
-First, build the application using Maven:
-mvn clean install
+1. First, build the application using Maven:
+   ```bash
+   mvn clean install
 
-Build the Docker Image
+2. **Build the Docker Image**
+   ```bash
+   docker build -t todo-app .
 
-docker build -t todo-app .
-
-Run the Application
-
-Finally, use Docker Compose to start the application:
-
-docker-compose up -d
+3. **Run the Application**
+   
+   Finally, use Docker Compose to start the application:
+   ```bash
+   docker-compose up -d
 
 This will start the application in detached mode. The application will be accessible at http://localhost:9210.
