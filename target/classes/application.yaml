@@ -1,0 +1,28 @@
+server:
+  port: 9210
+
+spring:
+  application:
+    name: todo
+  datasource:
+    url: jdbc:h2:mem:todo
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+    platform: h2
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+
+spring-doc:
+  swagger-ui:
+    path: '/swagger-ui.html'
+    swagger-ui:
+      operationsSorter: method

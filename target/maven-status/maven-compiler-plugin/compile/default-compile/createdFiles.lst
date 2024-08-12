@@ -1,0 +1,13 @@
+com\todo\config\WebConfig.class
+com\todo\service\TodoService.class
+com\todo\exception\ResourceNotFoundException.class
+com\todo\TodoApplication.class
+com\todo\controller\TodoController.class
+com\todo\controller\impl\TodoControllerImpl.class
+com\todo\repository\TaskRepository.class
+com\todo\config\RestTemplateConfig.class
+com\todo\dto\TaskDTO$TaskDTOBuilder.class
+com\todo\exception\GlobalExceptionHandler.class
+com\todo\model\Task.class
+com\todo\dto\TaskDTO.class
+com\todo\model\Task$TaskBuilder.class
